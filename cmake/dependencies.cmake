@@ -1,7 +1,3 @@
-# find SCOREC in the user-specified location
-set(Goal_USE_SCOREC_DEFAULT ON)
-bob_public_dep(SCOREC)
-
 # find Trilinos in the user-specified location
 set(Goal_USE_Trilinos_DEFAULT ON)
 bob_public_dep(Trilinos)
@@ -20,6 +16,7 @@ assert_trilinos_pkg(Phalanx)
 assert_trilinos_pkg(Belos)
 assert_trilinos_pkg(Ifpack2)
 assert_trilinos_pkg(MiniTensor)
+assert_trilinos_pkg(SCOREC)
 
 # check and enable optional Trilinos packages
 macro(check_trilinos_pkg pkg_name)

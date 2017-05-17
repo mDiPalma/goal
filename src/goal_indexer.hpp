@@ -53,7 +53,7 @@ class Indexer {
   /** \brief Destroy the indexer.
     * \details This destroys maps, graphs, and MultiVectors that
     * the indexer has constructed. */
-  ~Indexer();
+  virtual ~Indexer();
 
   /** \brief Set the current element block to operate over.
     * \details This is useful in scenarios where different element topologies
